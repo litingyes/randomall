@@ -7,7 +7,7 @@ Simple and elegant generation of random data.
 ## Installtion
 
 ```sh
-npm i randomall
+npm i @liting-yes/randomall
 ```
 
 
