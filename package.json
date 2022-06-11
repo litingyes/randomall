@@ -1,10 +1,10 @@
 {
   "name": "@liting-yes/randomall",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "simple and elegant generation of random data",
   "main": "lib/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "keywords": [
     "random",
@@ -17,5 +17,8 @@
   "license": "MIT",
   "dependencies": {
     "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "jest": "^28.1.1"
   }
 }

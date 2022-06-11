@@ -95,11 +95,11 @@ Function random.stringhas 6 params as follows:
 
   > random string without uppercase letters*
 
-- **addCharactar** *array*
+- **add** *array*
 
   > special characters that random string contains
 
-- **removeCharactar** *array*
+- **remove** *array*
 
   > special characters that random string must never contain
 
