@@ -22,6 +22,9 @@ const random = require('@liting-yes/randomall')
 random.number()
 // output: 88
 // return an integer between [0, 100)
+
+random.number.DEFAULT
+// default parameter value
 ```
 
 #### use with args
@@ -69,6 +72,10 @@ random.number({ isInteger: false })
 random.string()
 // output: Z1Qdvk
 // return a random string whose characters are letters and numbers
+
+random.string.DEFAULT
+random.string.CHARACTAR
+// default parameter value
 ```
 
 #### use with args
@@ -157,6 +164,10 @@ random.array(5, random.number, 1, 10)
 ```js
 random.image().then(imgUrl => console.log(imgUrl))
 // returns a configurable random image address
+
+random.image.DEFAULT_CONFIG
+random.image.DEFAULT_LOCATION
+// default parameter value
 ```
 
 #### use with args
