@@ -1,4 +1,4 @@
-# random
+# randomall
 
 Simple and elegant generation of random data.
 
