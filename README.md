@@ -11,7 +11,7 @@ npm i @liting-yes/randomall
 ## Hello Random
 
 ```js
-const random = require('randomall')
+const random = require('@liting-yes/randomall')
 ```
 
 ### random number
@@ -149,3 +149,33 @@ random.array(5, random.number, 1, 10)
 // output: [ 9, 5, 2, 5, 5 ]
 // return an array with 5 number element which is greater than 1 less than 10
 ```
+
+### random image
+
+#### simple to use
+
+```js
+random.image().then(imgUrl => console.log(imgUrl))
+// returns a configurable random image address
+```
+
+#### use with args
+
+- **userConfig** *object*
+
+> same as axios request configuration
+
+- **userLocation** *array*
+
+> nested position of target data
+
+```js
+random.image({ baseURL:'https://api.ixiaowai.cn', url: '/mcapi/mcapi.php' }, ['imgurl']).then(imgUrl => console.log(imgUrl))
+// return an random image url about the api
+```
+
+#### statement
+
+the image API the repo is using is [小歪API](https://api.ixiaowai.cn/)
+
+**in order to avoid some unforeseen problems, it is recommended to configure the API yourself**
