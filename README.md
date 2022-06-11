@@ -2,15 +2,11 @@
 
 Simple and elegant generation of random data.
 
-
-
 ## Installtion
 
 ```sh
 npm i @liting-yes/randomall
 ```
-
-
 
 ## Hello Random
 
@@ -27,6 +23,7 @@ random.number()
 // output: 88
 // return an integer between [0, 100)
 ```
+
 #### use with args
 
 Function random.number has 5 params as follows:
@@ -53,8 +50,6 @@ Function random.number has 5 params as follows:
 
 > max number of decimal places returned
 
-
-
 ```js
 random.number(1, 10, 10, false, 5)
 // output: 1.58
@@ -76,13 +71,9 @@ random.string()
 // return a random string whose characters are letters and numbers
 ```
 
-
-
 #### use with args
 
 Function random.stringhas 6 params as follows:
-
-
 
 - **len** *number*
 
@@ -113,12 +104,11 @@ random.string(10, true, false, true, ['@', '#', '?'], ['a', 'b', 'c'])
 // output: #sr#u?ljsv
 // return a random string that contain possibly the characters '@', '#', '? ' and no digits, uppercase letters, 'a', 'b', 'c'
 
+
 // support object passing
 random.string({ banNum: true, banLowercase: true })
 // output: ODMZPO
 ```
-
-
 
 ### random boolean
 
@@ -130,8 +120,6 @@ random.boolean()
 // return a random boolean value
 ```
 
-
-
 ### random array
 
 #### simple to use
@@ -141,8 +129,6 @@ random.array()
 // output: [45, 71,  8, 20, 79, 17, 73, 16, 85, 44]
 // return an array of length 10 and each element has a value greater than 0 and less than 100
 ```
-
-
 
 #### use with args
 
@@ -163,4 +149,3 @@ random.array(5, random.number, 1, 10)
 // output: [ 9, 5, 2, 5, 5 ]
 // return an array with 5 number element which is greater than 1 less than 10
 ```
-
