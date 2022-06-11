@@ -20,13 +20,13 @@ test('param radix', () => {
 })
 
 test('param isInteger', () => {
-    const numFloat = number(1, 100, 10, false)
+    const numFloat = number({ isInteger: false })
     expect(Number.isNaN(numFloat)).toBe(false)
     expect(Number.isInteger(numFloat)).toBe(false)
 })
 
 test('param decimal', () => {
-    const numFloat = number(1, 100, 10, false, 4)
+    const numFloat = number({ isInteger: false, decimal: 4 })
     const numLen = numFloat.toString().length
     const indexDot = numFloat.toString().indexOf('.')
 
