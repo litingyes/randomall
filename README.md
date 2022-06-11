@@ -57,11 +57,16 @@ Function random.number has 5 params as follows:
 
 ```js
 random.number(1, 10, 10, false, 5)
-// optput: 1.58
+// output: 1.58
 // return a float between [1, 10) with no more than 5 decimal places
+
+
+// support object passing
+random.number({ isInteger: false })
+// output: 62.664065
 ```
 
-### random boolean
+### random string
 
 #### simple to use
 
@@ -107,6 +112,10 @@ Function random.stringhas 6 params as follows:
 random.string(10, true, false, true, ['@', '#', '?'], ['a', 'b', 'c'])
 // output: #sr#u?ljsv
 // return a random string that contain possibly the characters '@', '#', '? ' and no digits, uppercase letters, 'a', 'b', 'c'
+
+// support object passing
+random.string({ banNum: true, banLowercase: true })
+// output: ODMZPO
 ```
 
 
