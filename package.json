@@ -1,6 +1,6 @@
 {
   "name": "@liting-yes/randomall",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "simple and elegant generation of random data",
   "main": "lib/index.js",
   "scripts": {
